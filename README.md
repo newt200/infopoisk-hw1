@@ -67,17 +67,27 @@
 
 ---
 
-## Пример запуска
+## Пример запуска и вывода результатов
 
 ```python
 from main import run_search
 
+
 results = run_search(
-    query="муж измена",
+    query="Гадалка сказала, что мой муж мне изменяет",
     input_path="woman.ru – 9 topic.csv",
     preprocess=True
 )
+print("Результаты поиска:")
+for _, row in results.iterrows():
+    print("=" * 80)
+    print(f"doc_id: {row['doc_id']}")
+    print(f"score : {row['score']:.4f}")
+    print()
+    print(row["text"])
+    print()
 ```
+
 
 ## Использование LLM
 
