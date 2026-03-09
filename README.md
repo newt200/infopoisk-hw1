@@ -75,7 +75,7 @@ from main import run_search
 
 results = run_search(
     query="муж измена",
-    input_path="woman_ru_9_topics.csv",
+    input_path="woman.ru – 9 topic.csv",
     preprocess=True
 )
 ```
