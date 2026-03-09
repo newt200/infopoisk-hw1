@@ -1,0 +1,7 @@
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.13.1
+tqdm==4.66.4
+pymystem3==0.2.0
+scikit-learn==1.5.1
+stop-words==2018.7.23
